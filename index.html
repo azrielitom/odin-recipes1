@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Recipes - Filipino Classics</title>
+</head>
+<body>
+    <!-- Semantic Header & Navigation -->
+    <header>
+        <h1>Odin Recipes</h1>
+        <p>Explore traditional Filipino home-cooked favorites.</p>
+        <nav aria-label="Main Recipe Navigation">
+            <ul>
+                <li><a href="recipes/adobo.html">Chicken Adobo</a></li>
+                <li><a href="recipes/sinigang.html">Pork Sinigang</a></li>
+                <li><a href="recipes/pancit.html">Pancit Canton</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Semantic Main Content -->
+    <main>
+        <!-- Required HTML Table with Accessibility Attributes -->
+        <section aria-labelledby="overview-heading">
+            <h2 id="overview-heading">Recipe Comparison &amp; Prep Guide</h2>
+            <table border="1">
+                <caption>Preparation times, difficulty levels, and serving sizes for featured dishes</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Dish Name</th>
+                        <th scope="col">Prep &amp; Cook Time</th>
+                        <th scope="col">Difficulty</th>
+                        <th scope="col">Servings</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Chicken Adobo</th>
+                        <td>45 mins</td>
+                        <td>Easy</td>
+                        <td>4–5 people</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pork Sinigang</th>
+                        <td>1 hr 15 mins</td>
+                        <td>Medium</td>
+                        <td>6 people</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Pancit Canton</th>
+                        <td>30 mins</td>
+                        <td>Easy</td>
+                        <td>4 people</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- Required Feedback Form with Proper Labels -->
+        <section aria-labelledby="feedback-heading">
+            <h2 id="feedback-heading">Recipe Feedback &amp; Suggestions</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Share Your Cooking Experience</legend>
+
+                    <p>
+                        <label for="visitor-name">Your Name (required):</label><br>
+                        <input type="text" id="visitor-name" name="visitor_name" required placeholder="e.g., Juan Dela Cruz">
+                    </p>
+
+                    <p>
+                        <label for="visitor-email">Email Address:</label><br>
+                        <input type="email" id="visitor-email" name="visitor_email" placeholder="juan@example.com">
+                    </p>
+
+                    <p>
+                        <label for="favorite-dish">Which recipe did you try?</label><br>
+                        <select id="favorite-dish" name="favorite_dish">
+                            <option value="adobo">Chicken Adobo</option>
+                            <option value="sinigang">Pork Sinigang</option>
+                            <option value="pancit">Pancit Canton</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Comments or Recipe Requests:</label><br>
+                        <textarea id="comments" name="comments" rows="4" cols="40" required placeholder="Tell us how your dish turned out..."></textarea>
+                    </p>
+
+                    <button type="submit">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>Created for ITE10 Practical Exercise 5 | Built with Semantic HTML5</p>
+    </footer>
+</body>
+</html>
